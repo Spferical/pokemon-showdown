@@ -3,7 +3,7 @@
 export const Formats: FormatList = [
 name: "[Gen 8] LCUU",
 		threads: [
-			`&bullet; <a href="https://www.smogon.com/forums/threads/swsh-lcuu-metagame-discussion-thread.3660866/">LC Metagame Discussion</a>`
+			`&bullet; <a href="https://www.smogon.com/forums/threads/swsh-lcuu-metagame-discussion-thread.3660866/">LCUU Metagame Discussion</a>`,
 		],
 
 		mod: 'gen8',
