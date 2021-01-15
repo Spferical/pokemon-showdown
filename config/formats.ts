@@ -60,6 +60,27 @@ export const Formats: FormatList = [
 		],
 	},
 	{
+		name: "[Gen 8] LC RU",
+		threads: [
+			`&bullet; <a href="https://www.smogon.com/forums/threads/3656348/">LC Metagame Discussion</a>`,
+			`&bullet; <a href="https://www.smogon.com/forums/threads/3661419/">LC Sample Teams</a>`,
+			`&bullet; <a href="https://www.smogon.com/forums/threads/3657374/">LC Viability Rankings</a>`,
+		],
+
+		mod: 'gen8',
+		maxLevel: 5,
+		ruleset: ['Little Cup', 'Standard', 'Dynamax Clause'],
+		banlist: [
+			'Abra', 'Amaura', 'Archen', 'Axew', 'Baltoy', 'Budew', 'Bulbasaur', 'Bunnelby', 'Carvanha', 'Chinchou', 'Corphish', 'Cottonee', 'Croagunk', 'Cufant', 'Cutiefly', 
+			'Darumaka', 'Dewpider', 'Diglett', 'Diglett-Alola', 'Drifloon', 'Drilbur', 'Dwebble', 'Elekid', 'Farfetchd-Galar', 'Ferroseed', 'Foongus', 'Frillish', 'Gastly', 
+			'Goldeen', 'Gothita', 'Grookey', 'Growlithe', 'Grubbin', 'Helioptile', 'Hippopotas', 'Inkay', 'Joltik', 'Kabuto', 'Koffing', 'Krabby', 'Larvesta', 'Lickitung', 'Lileep',
+			'Magby', 'Magnemite', 'Mantyke', 'Mareanie', 'Meowth', 'Mienfoo', 'Minccino', 'Mudbray', 'Munchlax', 'Natu', 'Oddish', 'Omanyte', 'Onix', 'Pancham', 'Pawniard', 'Ponyta',
+			'Ponyta-Galar', 'Porygon', 'Pumkpaboo-Small', 'Riolu', 'Rufflet', 'Salandit', 'Sandile', 'Sandshrew', 'Sandshrew-Alola', 'Scraggy', 'Scorbunny', 'Scyther', 'Shellder',
+			'Shellos', 'Skrelp', 'Slowpoke', 'Sneasel', 'Snover', 'Swirlix', 'Spritzee', 'Squirtle', 'Staryu', 'Stunky', 'Tangela', 'Tentacool', 'Timburr', 'Tirtouga', 'Trapinch',
+			'Treecko', 'Tyrunt', 'Vullaby', 'Vulpix', 'Vulpix-Alola', 'Woobat', 'Wingull', 'Wynaut', 'Zigzagoon', 'Chlorophyll', 'Baton Pass',
+		],
+	},
+	{
 		name: "[Gen 8] LC Monotype",
 		desc: `Little Cup but all the Pok&eacute;mon on a team must share a type.`,
 		threads: [
