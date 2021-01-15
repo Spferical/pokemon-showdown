@@ -56,7 +56,7 @@ export const Formats: FormatList = [
 			'Corsola-Galar', 'Cutiefly', 'Drifloon', 'Gastly', 'Gothita', 'Rufflet', 'Scyther', 'Sneasel', 'Swirlix', 'Tangela', 'Vulpix-Alola',
 			'Chlorophyll', 'Moody', 'Baton Pass', 'Abra', 'Archen', 'Chinchou', 'Dewpider', 'Diglett', 'Drilbur', 'Dwebble', 'Ferroseed', 'Foongus', 'Grookey', 'Koffing', 
       'Magnemite', 'Mareanie', 'Mienfoo', 'Mudbray', 'Onix', 'Pawniard', 'Ponyta', 'Ponyta-Galar', 'Porygon', 'Scorbunny', 'Scraggy', 'Spritzee', 'Staryu', 'Timburr',
-      'Trapinch', 'Tyrunt', 'Vullaby', 'Vulpix', 'Dewpider', 'Farfetchd-Galar', 'Shellder', 'Wingull',
+      'Trapinch', 'Tyrunt', 'Vullaby', 'Vulpix', 'Dewpider', 'Farfetch\u2019d-Galar', 'Shellder', 'Wingull',
 		],
 	},
 	{
@@ -72,7 +72,7 @@ export const Formats: FormatList = [
 		ruleset: ['Little Cup', 'Standard', 'Dynamax Clause'],
 		banlist: [
 			'Abra', 'Amaura', 'Archen', 'Axew', 'Baltoy', 'Budew', 'Bulbasaur', 'Bunnelby', 'Carvanha', 'Chinchou', 'Corphish', 'Cottonee', 'Croagunk', 'Cufant', 'Cutiefly', 
-			'Darumaka', 'Dewpider', 'Diglett', 'Diglett-Alola', 'Drifloon', 'Drilbur', 'Dwebble', 'Elekid', 'Farfetchd-Galar', 'Ferroseed', 'Foongus', 'Frillish', 'Gastly', 
+			'Darumaka', 'Dewpider', 'Diglett', 'Diglett-Alola', 'Drifloon', 'Drilbur', 'Dwebble', 'Elekid', 'Farfetch\u2019d-Galar', 'Ferroseed', 'Foongus', 'Frillish', 'Gastly', 
 			'Goldeen', 'Gothita', 'Grookey', 'Growlithe', 'Grubbin', 'Helioptile', 'Hippopotas', 'Inkay', 'Joltik', 'Kabuto', 'Koffing', 'Krabby', 'Larvesta', 'Lickitung', 'Lileep',
 			'Magby', 'Magnemite', 'Mantyke', 'Mareanie', 'Meowth', 'Mienfoo', 'Minccino', 'Mudbray', 'Munchlax', 'Natu', 'Oddish', 'Omanyte', 'Onix', 'Pancham', 'Pawniard', 'Ponyta',
 			'Ponyta-Galar', 'Porygon', 'Pumkpaboo-Small', 'Riolu', 'Rufflet', 'Salandit', 'Sandile', 'Sandshrew', 'Sandshrew-Alola', 'Scraggy', 'Scorbunny', 'Scyther', 'Shellder',
