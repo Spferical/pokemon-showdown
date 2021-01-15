@@ -52,7 +52,7 @@ export const Formats: FormatList = [
 		ruleset: ['Little Cup', 'Standard', 'Dynamax Clause'],
 		banlist: [
 			'Corsola-Galar', 'Cutiefly', 'Drifloon', 'Gastly', 'Gothita', 'Rufflet', 'Scyther', 'Sneasel', 'Swirlix', 'Tangela', 'Vulpix-Alola',
-			'Chlorophyll', 'Moody', 'Baton Pass', 'Abra', 'Archen', 'Chinchou', 'Dewpider', 'Diglett', 'Drilbur', 'Dwebble', 'Ferroseed', 'Foongus', 'Grookey', 'Koffing', 
+			'Chlorophyll', 'Moody', 'Baton Pass', 'Abra', 'Archen', 'Chinchou', 'Dewpider', 'Diglett-Base', 'Drilbur', 'Dwebble', 'Ferroseed', 'Foongus', 'Grookey', 'Koffing', 
       'Magnemite', 'Mareanie', 'Mienfoo', 'Mudbray', 'Onix', 'Pawniard', 'Ponyta-Base', 'Ponyta-Galar', 'Porygon', 'Scorbunny', 'Scraggy', 'Spritzee', 'Staryu', 'Timburr',
       'Trapinch', 'Tyrunt', 'Vullaby', 'Vulpix-Base', 'Farfetch\u2019d-Galar', 'Shellder', 'Wingull',
 		],
