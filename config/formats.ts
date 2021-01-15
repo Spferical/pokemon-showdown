@@ -70,7 +70,7 @@ export const Formats: FormatList = [
 			'Magby', 'Magnemite', 'Mantyke', 'Mareanie', 'Meowth', 'Mienfoo', 'Minccino', 'Mudbray', 'Munchlax', 'Natu', 'Oddish', 'Omanyte', 'Onix', 'Pancham', 'Pawniard', 'Ponyta',
 			'Ponyta-Galar', 'Porygon', 'Pumkpaboo-Small', 'Riolu', 'Rufflet', 'Salandit', 'Sandile', 'Sandshrew', 'Sandshrew-Alola', 'Scraggy', 'Scorbunny', 'Scyther', 'Shellder',
 			'Shellos', 'Skrelp', 'Slowpoke', 'Sneasel', 'Snover', 'Swirlix', 'Spritzee', 'Squirtle', 'Staryu', 'Stunky', 'Tangela', 'Tentacool', 'Timburr', 'Tirtouga', 'Trapinch',
-			'Treecko', 'Tyrunt', 'Vullaby', 'Vulpix', 'Vulpix-Alola', 'Woobat', 'Wingull', 'Wynaut', 'Zigzagoon', 'Chlorophyll', 'Baton Pass',
+			'Treecko', 'Tyrunt', 'Vullaby', 'Vulpix', 'Vulpix-Alola', 'Woobat', 'Wingull', 'Wynaut', 'Zigzagoon', 'Chlorophyll', 'Baton Pass', 'Corsola-Galar',
 		],
 	},
 	{
