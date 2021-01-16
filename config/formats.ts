@@ -72,6 +72,9 @@ export const Formats: FormatList = [
 	},
 	{
 		name: "[Gen 8] LC RU",
+		threads: [
+			`&bullet; <a href="https://discord.gg/rF6UvCvqMv">LC RU Discord Server with Resources</a>`,
+		],
 		
 		mod: 'gen8',
 		maxLevel: 5,
@@ -83,7 +86,7 @@ export const Formats: FormatList = [
 			'Magby', 'Magnemite', 'Mantyke', 'Mareanie', 'Meowth-Base', 'Mienfoo', 'Minccino', 'Mudbray', 'Munchlax', 'Natu', 'Oddish', 'Omanyte', 'Onix', 'Pancham', 'Pawniard', 'Ponyta-Base',
 			'Ponyta-Galar', 'Porygon', 'Pumpkaboo-Small', 'Riolu', 'Rufflet', 'Salandit', 'Sandile', 'Sandshrew-Base', 'Sandshrew-Alola', 'Scraggy', 'Scorbunny', 'Scyther', 'Shellder',
 			'Shellos', 'Skrelp', 'Slowpoke-Base', 'Sneasel', 'Snover', 'Swirlix', 'Spritzee', 'Squirtle', 'Staryu', 'Stunky', 'Tangela', 'Tentacool', 'Timburr', 'Tirtouga', 'Trapinch',
-			'Treecko', 'Tyrunt', 'Vullaby', 'Vulpix-Base', 'Vulpix-Alola', 'Woobat', 'Wingull', 'Wynaut', 'Zigzagoon', 'Chlorophyll', 'Baton Pass', 'Corsola-Galar',
+			'Treecko', 'Tyrunt', 'Vullaby', 'Vulpix-Base', 'Vulpix-Alola', 'Woobat', 'Wingull', 'Wynaut', 'Zigzagoon', 'Chlorophyll', 'Baton Pass', 'Corsola-Galar', 'Moody',
 		],
 	},
 	{
