@@ -41,6 +41,19 @@ export const Formats: FormatList = [
 			'Chlorophyll', 'Moody', 'Baton Pass',
 		],
 	},
+		{
+		name: "[Gen 8] LC Ubers",
+		threads: [
+			`&bullet; <a href="https://www.smogon.com/forums/threads/lc-ubers.3614111/">LC Ubers Metagame Discussion</a>`,
+		],
+
+		mod: 'gen8',
+		maxLevel: 5,
+		ruleset: ['Little Cup', 'Standard', 'Dynamax Clause'],
+		banlist: [
+			'Dragon Rage', 'Sonicboom', 'Baton Pass',
+		],
+	},
 	{
 		name: "[Gen 8] LC UU",
 		threads: [
