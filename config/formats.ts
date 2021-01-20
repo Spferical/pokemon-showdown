@@ -71,7 +71,7 @@ export const Formats: FormatList = [
 		],
 	},
 	{
-		name: "[Gen 8] LC RU",
+		name: "[Gen 8] LC RU (Unofficial)",
 		threads: [
 			`&bullet; <a href="https://discord.gg/rF6UvCvqMv">LC RU Discord Server with Resources</a>`,
 		],
@@ -80,13 +80,13 @@ export const Formats: FormatList = [
 		maxLevel: 5,
 		ruleset: ['Little Cup', 'Standard', 'Dynamax Clause'],
 		banlist: [
-			'Abra', 'Amaura', 'Archen', 'Axew', 'Baltoy', 'Budew', 'Bulbasaur', 'Bunnelby', 'Carvanha', 'Chinchou', 'Corphish', 'Cottonee', 'Croagunk', 'Cufant', 'Cutiefly', 
-			'Darumaka-Base', 'Dewpider', 'Diglett-Base', 'Diglett-Alola', 'Drifloon', 'Drilbur', 'Dwebble', 'Elekid', 'Farfetch\u2019d-Galar', 'Ferroseed', 'Foongus', 'Frillish', 'Gastly', 
-			'Goldeen', 'Gothita', 'Grookey', 'Growlithe', 'Grubbin', 'Helioptile', 'Hippopotas', 'Inkay', 'Joltik', 'Kabuto', 'Koffing', 'Krabby', 'Larvesta', 'Lickitung', 'Lileep',
+			'Abra', 'Amaura', 'Archen', 'Axew', 'Baltoy', 'Budew', 'Bunnelby', 'Carvanha', 'Chinchou', 'Corphish', 'Cottonee', 'Croagunk', 'Cufant', 'Cutiefly', 
+			'Dewpider', 'Diglett-Base', 'Diglett-Alola', 'Drifloon', 'Drilbur', 'Dwebble', 'Elekid', 'Farfetch\u2019d-Galar', 'Ferroseed', 'Foongus', 'Frillish', 'Gastly', 
+			'Goldeen', 'Gothita', 'Grookey', 'Growlithe', 'Grubbin', 'Helioptile', 'Hippopotas', 'Joltik', 'Kabuto', 'Koffing', 'Krabby', 'Larvesta', 'Lileep',
 			'Magby', 'Magnemite', 'Mantyke', 'Mareanie', 'Meowth-Base', 'Mienfoo', 'Minccino', 'Mudbray', 'Munchlax', 'Natu', 'Oddish', 'Omanyte', 'Onix', 'Pancham', 'Pawniard', 'Ponyta-Base',
-			'Ponyta-Galar', 'Porygon', 'Pumpkaboo-Small', 'Riolu', 'Rufflet', 'Salandit', 'Sandile', 'Sandshrew-Base', 'Sandshrew-Alola', 'Scraggy', 'Scorbunny', 'Scyther', 'Shellder',
-			'Shellos', 'Skrelp', 'Slowpoke-Base', 'Sneasel', 'Snover', 'Swirlix', 'Spritzee', 'Squirtle', 'Staryu', 'Stunky', 'Tangela', 'Tentacool', 'Timburr', 'Tirtouga', 'Trapinch',
-			'Treecko', 'Tyrunt', 'Vullaby', 'Vulpix-Base', 'Vulpix-Alola', 'Woobat', 'Wingull', 'Wynaut', 'Zigzagoon', 'Chlorophyll', 'Baton Pass', 'Corsola-Galar', 'Moody',
+			'Ponyta-Galar', 'Porygon', 'Pumpkaboo-Small', 'Pumpkaboo-Super', 'Rufflet', 'Salandit', 'Sandile', 'Sandshrew-Base', 'Sandshrew-Alola', 'Scraggy', 'Scorbunny', 'Scyther', 'Shellder',
+			'Shellos', 'Skrelp', 'Sneasel', 'Snover', 'Swirlix', 'Spritzee', 'Squirtle', 'Staryu', 'Stunky', 'Tangela', 'Tentacool', 'Timburr', 'Tirtouga', 'Trapinch',
+			'Tyrunt', 'Vullaby', 'Vulpix-Base', 'Vulpix-Alola', 'Woobat', 'Wingull', 'Wynaut', 'Zigzagoon', 'Chlorophyll', 'Baton Pass', 'Corsola-Galar', 'Moody',
 		],
 	},
 	{
