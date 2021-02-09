@@ -172,6 +172,7 @@ export const Formats: FormatList = [
 			'Arena Trap', 'Shadow Tag', 'Baton Pass',
 		],
 	},
+	{
 	name: "[Gen 8] LC STAAABmons (Unofficial)",
 		desc: `Pok&eacute;mon can use any move of their typing, in addition to the moves they can normally learn. Additionally, Pok&eacute;mon have access to almost any ability.`,
 		threads: [
