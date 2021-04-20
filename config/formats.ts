@@ -82,8 +82,8 @@ export const Formats: FormatList = [
 		banlist: [
 			'Abra', 'Amaura', 'Archen', 'Axew', 'Baltoy', 'Budew', 'Bunnelby', 'Carvanha', 'Chinchou', 'Corphish', 'Cottonee', 'Croagunk', 'Cufant', 'Cutiefly', 
 			'Dewpider', 'Diglett-Base', 'Diglett-Alola', 'Drifloon', 'Drilbur', 'Dwebble', 'Elekid', 'Farfetch\u2019d-Galar', 'Ferroseed', 'Foongus', 'Frillish', 'Gastly', 
-			'Goldeen', 'Gothita', 'Grookey', 'Growlithe', 'Grubbin', 'Helioptile', 'Hippopotas', 'Joltik', 'Kabuto', 'Koffing', 'Krabby', 'Larvesta', 'Lileep',
-			'Magby', 'Magnemite', 'Mantyke', 'Mareanie', 'Meowth-Base', 'Mienfoo', 'Minccino', 'Mudbray', 'Munchlax', 'Natu', 'Oddish', 'Omanyte', 'Onix', 'Pancham', 'Pawniard', 'Ponyta-Base',
+			'Goldeen', 'Gothita', 'Grookey', 'Grubbin', 'Helioptile', 'Hippopotas', 'Joltik', 'Koffing', 'Larvesta', 'Lileep',
+			'Magby', 'Magnemite', 'Mantyke', 'Mareanie', 'Meowth-Base', 'Mienfoo', 'Minccino', 'Mudbray', 'Munchlax', 'Natu', 'Omanyte', 'Onix', 'Pancham', 'Pawniard', 'Ponyta-Base',
 			'Ponyta-Galar', 'Porygon', 'Pumpkaboo-Small', 'Pumpkaboo-Super', 'Rufflet', 'Salandit', 'Sandile', 'Sandshrew-Base', 'Sandshrew-Alola', 'Scraggy', 'Scorbunny', 'Scyther', 'Shellder',
 			'Shellos', 'Skrelp', 'Sneasel', 'Snover', 'Swirlix', 'Spritzee', 'Squirtle', 'Staryu', 'Stunky', 'Tangela', 'Tentacool', 'Timburr', 'Tirtouga', 'Trapinch',
 			'Tyrunt', 'Vullaby', 'Vulpix-Base', 'Vulpix-Alola', 'Woobat', 'Wingull', 'Wynaut', 'Zigzagoon', 'Chlorophyll', 'Baton Pass', 'Corsola-Galar', 'Moody',
