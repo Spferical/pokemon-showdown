@@ -53,7 +53,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move && user.baseSpecies.name === 'Dialga' && (move.type === 'Steel' || move.type === 'Dragon')) {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		itemUser: ["Dialga"],
@@ -146,7 +146,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			this.add('-enditem', target, 'Air Balloon');
 			target.item = '';
 			target.itemData = {id: '', target};
-			this.runEvent('AfterUseItem', target, null, null, this.dex.getItem('airballoon'));
+			this.runEvent('AfterUseItem', target, null, null, this.dex.items.get('airballoon'));
 		},
 		onAfterSubDamage(damage, target, source, effect) {
 			this.debug('effect: ' + effect.id);
@@ -154,7 +154,7 @@ export const Items: {[itemid: string]: ItemData} = {
 				this.add('-enditem', target, 'Air Balloon');
 				target.item = '';
 				target.itemData = {id: '', target};
-				this.runEvent('AfterUseItem', target, null, null, this.dex.getItem('airballoon'));
+				this.runEvent('AfterUseItem', target, null, null, this.dex.items.get('airballoon'));
 			}
 		},
 		num: 541,
@@ -275,7 +275,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onDisableMove(pokemon) {
 			for (const moveSlot of pokemon.moveSlots) {
-				if (this.dex.getMove(moveSlot.move).category === 'Status') {
+				if (this.dex.moves.get(moveSlot.move).category === 'Status') {
 					pokemon.disableMove(moveSlot.id);
 				}
 			}
@@ -404,7 +404,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onTryHeal(damage, target, source, effect) {
 			const heals = ['drain', 'leechseed', 'ingrain', 'aquaring', 'strengthsap'];
 			if (heals.includes(effect.id)) {
-				return this.chainModify([0x14CC, 0x1000]);
+				return this.chainModify([5324, 4096]);
 			}
 		},
 		num: 296,
@@ -429,7 +429,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move && move.type === 'Fighting') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		num: 241,
@@ -471,7 +471,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move && move.type === 'Dark') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		num: 240,
@@ -566,7 +566,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onModifyAccuracy(accuracy) {
 			if (typeof accuracy !== 'number') return;
 			this.debug('brightpowder - decreasing accuracy');
-			return this.chainModify([0x0F1C, 0x1000]);
+			return this.chainModify([3686, 4096]);
 		},
 		num: 213,
 		gen: 2,
@@ -667,7 +667,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move && move.type === 'Fire') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		num: 249,
@@ -1210,7 +1210,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move && move.type === 'Dragon') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		onTakeItem(item, pokemon, source) {
@@ -1233,7 +1233,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move && move.type === 'Dragon') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		num: 250,
@@ -1296,7 +1296,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move && move.type === 'Dark') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		onTakeItem(item, pokemon, source) {
@@ -1362,7 +1362,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move && move.type === 'Ground') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		onTakeItem(item, pokemon, source) {
@@ -1420,7 +1420,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onAfterBoost(boost, target, source, effect) {
 			if (this.activeMove?.id === 'partingshot') return;
 			let eject = false;
-			let i: BoostName;
+			let i: BoostID;
 			for (i in boost) {
 				if (boost[i]! < 0) {
 					eject = true;
@@ -1573,7 +1573,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onModifyDamage(damage, source, target, move) {
 			if (move && target.getMoveHitData(move).typeMod > 0) {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		num: 268,
@@ -1751,7 +1751,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move && move.type === 'Fighting') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		onTakeItem(item, pokemon, source) {
@@ -1787,7 +1787,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move && move.type === 'Fire') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		onTakeItem(item, pokemon, source) {
@@ -2209,7 +2209,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (user.baseSpecies.num === 487 && (move.type === 'Ghost' || move.type === 'Dragon')) {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		onTakeItem(item, pokemon, source) {
@@ -2311,7 +2311,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move && move.type === 'Rock') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		num: 238,
@@ -2470,7 +2470,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Ice') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		onTakeItem(item, pokemon, source) {
@@ -2523,7 +2523,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Bug') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		onTakeItem(item, pokemon, source) {
@@ -2562,7 +2562,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Steel') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		onTakeItem(item, pokemon, source) {
@@ -2585,9 +2585,9 @@ export const Items: {[itemid: string]: ItemData} = {
 			type: "Dragon",
 		},
 		onDamagingHit(damage, target, source, move) {
-			if (move.category === 'Physical') {
+			if (move.category === 'Physical' && source.hp && source.isActive) {
 				if (target.eatItem()) {
-					this.damage(source.baseMaxhp / 8, source, target);
+					this.damage(source.baseMaxhp / (target.hasAbility('ripen') ? 4 : 8), source, target);
 				}
 			}
 		},
@@ -2800,7 +2800,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onModifyAccuracy(accuracy) {
 			if (typeof accuracy !== 'number') return;
 			this.debug('lax incense - decreasing accuracy');
-			return this.chainModify([0x0F1C, 0x1000]);
+			return this.chainModify([3686, 4096]);
 		},
 		num: 255,
 		gen: 3,
@@ -2906,11 +2906,11 @@ export const Items: {[itemid: string]: ItemData} = {
 			basePower: 30,
 		},
 		onModifyDamage(damage, source, target, move) {
-			return this.chainModify([0x14CC, 0x1000]);
+			return this.chainModify([5324, 4096]);
 		},
 		onAfterMoveSecondarySelf(source, target, move) {
 			if (source && source !== target && move && move.category !== 'Status') {
-				this.damage(source.baseMaxhp / 10, source, source, this.dex.getItem('lifeorb'));
+				this.damage(source.baseMaxhp / 10, source, source, this.dex.items.get('lifeorb'));
 			}
 		},
 		num: 270,
@@ -3077,7 +3077,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move && user.baseSpecies.name === 'Palkia' && (move.type === 'Water' || move.type === 'Dragon')) {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		itemUser: ["Palkia"],
@@ -3133,7 +3133,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Electric') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		num: 242,
@@ -3260,7 +3260,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Grass') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		onTakeItem(item, pokemon, source) {
@@ -3349,7 +3349,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Steel') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		num: 233,
@@ -3401,9 +3401,9 @@ export const Items: {[itemid: string]: ItemData} = {
 				this.effectData.lastMove = move.id;
 			},
 			onModifyDamage(damage, source, target, move) {
-				const dmgMod = [0x1000, 0x1333, 0x1666, 0x1999, 0x1CCC, 0x2000];
+				const dmgMod = [4096, 4915, 5734, 6553, 7372, 8192];
 				const numConsecutive = this.effectData.numConsecutive > 5 ? 5 : this.effectData.numConsecutive;
-				return this.chainModify([dmgMod[numConsecutive], 0x1000]);
+				return this.chainModify([dmgMod[numConsecutive], 4096]);
 			},
 		},
 		num: 277,
@@ -3471,7 +3471,7 @@ export const Items: {[itemid: string]: ItemData} = {
 					this.add('-enditem', source, 'Micle Berry');
 					source.removeVolatile('micleberry');
 					if (typeof accuracy === 'number') {
-						return this.chainModify([0x1333, 0x1000]);
+						return this.chainModify([4915, 4096]);
 					}
 				}
 			},
@@ -3497,7 +3497,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Psychic') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		onTakeItem(item, pokemon, source) {
@@ -3520,7 +3520,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Grass') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		num: 239,
@@ -3574,7 +3574,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 16,
 		onBasePower(basePower, user, target, move) {
 			if (move.category === 'Physical') {
-				return this.chainModify([0x1199, 0x1000]);
+				return this.chainModify([4505, 4096]);
 			}
 		},
 		num: 266,
@@ -3589,7 +3589,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Water') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		num: 243,
@@ -3631,7 +3631,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Ice') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		num: 246,
@@ -3707,7 +3707,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Psychic') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		num: 314,
@@ -3950,7 +3950,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move && move.type === 'Fairy') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		onTakeItem(item, pokemon, source) {
@@ -3983,7 +3983,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Poison') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		num: 245,
@@ -4177,48 +4177,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		fling: {
 			basePower: 30,
 		},
-		onAttractPriority: -1,
-		onAttract(target, source) {
-			if (
-				target !== source && target === this.activePokemon &&
-				this.activeMove && this.activeMove.flags['contact']
-			) return false;
-		},
-		onBoostPriority: -1,
-		onBoost(boost, target, source, effect) {
-			if (target !== source && target === this.activePokemon && this.activeMove && this.activeMove.flags['contact']) {
-				if (effect && effect.effectType === 'Ability') {
-					// Ability activation always happens for boosts
-					this.add('-activate', target, 'item: Protective Pads');
-				}
-				return false;
-			}
-		},
-		onDamagePriority: -1,
-		onDamage(damage, target, source, effect) {
-			if (target !== source && target === this.activePokemon && this.activeMove && this.activeMove.flags['contact']) {
-				if (effect && effect.effectType === 'Ability') {
-					this.add('-activate', source, effect.fullname);
-					this.add('-activate', target, 'item: Protective Pads');
-				}
-				return false;
-			}
-		},
-		onSetAbility(ability, target, source, effect) {
-			if (target !== source && target === this.activePokemon && this.activeMove && this.activeMove.flags['contact']) {
-				if (effect && effect.effectType === 'Ability' && effect.id !== 'wanderingspirit') {
-					this.add('-activate', source, effect.fullname);
-					this.add('-activate', target, 'item: Protective Pads');
-				}
-				return false;
-			}
-		},
-		onSetStatus(status, target, source, effect) {
-			if (
-				target !== source && target === this.activePokemon &&
-				this.activeMove && this.activeMove.flags['contact']
-			) return false;
-		},
+		// protective effect handled in Battle#checkMoveMakesContact
 		num: 880,
 		gen: 7,
 	},
@@ -4561,7 +4520,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Rock') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		num: 315,
@@ -4602,7 +4561,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onDamagingHitOrder: 2,
 		onDamagingHit(damage, target, source, move) {
-			if (move.flags['contact']) {
+			if (this.checkMoveMakesContact(move, source, target)) {
 				this.damage(source.baseMaxhp / 6, source, target);
 			}
 		},
@@ -4645,7 +4604,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Grass') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		num: 318,
@@ -4684,9 +4643,9 @@ export const Items: {[itemid: string]: ItemData} = {
 			type: "Dark",
 		},
 		onDamagingHit(damage, target, source, move) {
-			if (move.category === 'Special') {
+			if (move.category === 'Special' && source.hp && source.isActive) {
 				if (target.eatItem()) {
-					this.damage(source.baseMaxhp / 8, source, target);
+					this.damage(source.baseMaxhp / (target.hasAbility('ripen') ? 4 : 8), source, target);
 				}
 			}
 		},
@@ -4862,7 +4821,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move && move.type === 'Water') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		num: 254,
@@ -4877,7 +4836,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move && move.type === 'Flying') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		num: 244,
@@ -4982,7 +4941,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Normal') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		num: 251,
@@ -4997,7 +4956,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Bug') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		num: 222,
@@ -5042,7 +5001,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Flying') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		onTakeItem(item, pokemon, source) {
@@ -5116,7 +5075,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Ground') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		num: 237,
@@ -5145,7 +5104,7 @@ export const Items: {[itemid: string]: ItemData} = {
 				move && (user.baseSpecies.num === 380 || user.baseSpecies.num === 381) &&
 				(move.type === 'Psychic' || move.type === 'Dragon')
 			) {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		itemUser: ["Latios", "Latias"],
@@ -5161,7 +5120,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Ghost') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		num: 247,
@@ -5187,7 +5146,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Water') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		onTakeItem(item, pokemon, source) {
@@ -5208,7 +5167,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Ghost') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		onTakeItem(item, pokemon, source) {
@@ -5243,8 +5202,8 @@ export const Items: {[itemid: string]: ItemData} = {
 			}
 		},
 		onEat(pokemon) {
-			const stats: BoostName[] = [];
-			let stat: BoostName;
+			const stats: BoostID[] = [];
+			let stat: BoostID;
 			for (stat in pokemon.boosts) {
 				if (stat !== 'accuracy' && stat !== 'evasion' && pokemon.boosts[stat] < 6) {
 					stats.push(stat);
@@ -5352,7 +5311,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			this.damage(pokemon.baseMaxhp / 8);
 		},
 		onHit(target, source, move) {
-			if (source && source !== target && !source.item && move && move.flags['contact']) {
+			if (source && source !== target && !source.item && move && this.checkMoveMakesContact(move, source, target)) {
 				const barb = target.takeItem();
 				if (!barb) return; // Gen 4 Multitype
 				source.setItem(barb);
@@ -5369,7 +5328,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Rock') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		onTakeItem(item, pokemon, source) {
@@ -5560,7 +5519,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Poison') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		onTakeItem(item, pokemon, source) {
@@ -6483,7 +6442,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Psychic') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		num: 248,
@@ -6650,7 +6609,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Water') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		num: 317,
@@ -6704,7 +6663,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			effect(pokemon) {
 				let activate = false;
 				const boosts: SparseBoostsTable = {};
-				let i: BoostName;
+				let i: BoostID;
 				for (i in pokemon.boosts) {
 					if (pokemon.boosts[i] < 0) {
 						activate = true;
@@ -6720,7 +6679,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onUpdate(pokemon) {
 			let activate = false;
 			const boosts: SparseBoostsTable = {};
-			let i: BoostName;
+			let i: BoostID;
 			for (i in pokemon.boosts) {
 				if (pokemon.boosts[i] < 0) {
 					activate = true;
@@ -6744,7 +6703,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onSourceModifyAccuracyPriority: -2,
 		onSourceModifyAccuracy(accuracy) {
 			if (typeof accuracy === 'number') {
-				return this.chainModify([0x1199, 0x1000]);
+				return this.chainModify([4505, 4096]);
 			}
 		},
 		num: 265,
@@ -6784,7 +6743,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 16,
 		onBasePower(basePower, user, target, move) {
 			if (move.category === 'Special') {
-				return this.chainModify([0x1199, 0x1000]);
+				return this.chainModify([4505, 4096]);
 			}
 		},
 		num: 267,
@@ -6821,7 +6780,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Electric') {
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		onTakeItem(item, pokemon, source) {
@@ -6845,7 +6804,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onSourceModifyAccuracy(accuracy, target) {
 			if (typeof accuracy === 'number' && !this.queue.willMove(target)) {
 				this.debug('Zoom Lens boosting accuracy');
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		num: 276,
