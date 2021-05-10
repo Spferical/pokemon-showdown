@@ -159,7 +159,7 @@ export const Formats: FormatList = [
 	},
 	{
 		name: "[Gen 8] NFE",
-		desc: `Only Pok&eacute;mon that can evolve are allowed.`,
+		desc: `Only Pok&eacute;mon that can evolve are allowed, UU version`,
 		threads: [
 			`&bullet; <a href="https://www.smogon.com/forums/threads/3656332/">NFE Metagame Discussion</a>`,
 			`&bullet; <a href="https://www.smogon.com/forums/threads/3657558/">NFE Resources</a>`,
@@ -170,6 +170,23 @@ export const Formats: FormatList = [
 		banlist: [
 			'Chansey', 'Doublade', 'Haunter', 'Magneton', 'Pawniard', 'Porygon2', 'Rhydon', 'Scyther', 'Sneasel', 'Type: Null',
 			'Arena Trap', 'Shadow Tag', 'Baton Pass',
+		],
+	},
+	{
+		name: "[Gen 8] NFE UU",
+		desc: `Only Pok&eacute;mon that can evolve are allowed.`,
+		threads: [
+			`&bullet; <a href="https://www.smogon.com/forums/threads/3656332/">NFE Metagame Discussion</a>`,
+			`&bullet; <a href="https://www.smogon.com/forums/threads/3657558/">NFE Resources</a>`,
+		],
+
+		mod: 'gen8',
+		ruleset: ['Not Fully Evolved', 'Standard', 'Dynamax Clause'],
+		banlist: [
+			'Chansey', 'Doublade', 'Haunter', 'Magneton', 'Pawniard', 'Porygon2', 'Rhydon', 'Scyther', 'Sneasel', 'Type: Null',
+			'Arena Trap', 'Shadow Tag', 'Baton Pass', 'Thwackey', 'Gurdurr', 'Electabuzz', 'Piloswine', 'Golbat', 'Raboot', 'Kadabra', 'Pikachu', 
+			'Clefairy', 'Wartortle', 'Tangela', 'Hattrem', 'Corsola-Galar', 'Magmar', 'Carkol', 'Togetic', 'Gabite', 'Mr. Mime-Galar', 'Dusclops',
+			'Klang', 'Charjabug', 'Mareanie', 'Ferroseed', 'Slowpoke', 'Marshtomp', 'Fraxure', 'Lampent', 'Krokorok'
 		],
 	},
 	{
