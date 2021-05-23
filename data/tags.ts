@@ -34,6 +34,18 @@ export const Tags: {[id: string]: TagData} = {
 		name: "Mega",
 		speciesFilter: species => !!species.isMega,
 	},
+	mythical: {
+		name: "Mythical",
+		speciesFilter: species => species.tags.includes("Mythical"),
+	},
+	sublegendary: {
+		name: "Sub-Legendary",
+		speciesFilter: species => species.tags.includes("Sub-Legendary"),
+	},
+	restrictedlegendary: {
+		name: "Restricted Legendary",
+		speciesFilter: species => species.tags.includes("Restricted Legendary"),
+	},
 
 	// Move tags
 	// ---------
@@ -114,11 +126,11 @@ export const Tags: {[id: string]: TagData} = {
 	// -----
 	uber: {
 		name: "Uber",
-		speciesFilter: species => species.tier === 'Uber',
+		speciesFilter: species => species.tier === 'Uber' || species.tier === '(Uber)' || species.tier === 'AG',
 	},
 	ou: {
 		name: "OU",
-		speciesFilter: species => species.tier === 'OU',
+		speciesFilter: species => species.tier === 'OU' || species.tier === '(OU)',
 	},
 	uubl: {
 		name: "UUBL",
@@ -150,7 +162,7 @@ export const Tags: {[id: string]: TagData} = {
 	},
 	pu: {
 		name: "PU",
-		speciesFilter: species => species.tier === 'PU',
+		speciesFilter: species => species.tier === 'PU' || species.tier === '(NU)',
 	},
 	zu: {
 		name: "ZU",
@@ -164,9 +176,9 @@ export const Tags: {[id: string]: TagData} = {
 		name: "LC",
 		speciesFilter: species => species.doublesTier === 'LC',
 	},
-	cap: {
-		name: "CAP",
-		speciesFilter: species => species.tier === 'CAP',
+	captier: {
+		name: "CAP Tier",
+		speciesFilter: species => species.isNonstandard === 'CAP',
 	},
 	caplc: {
 		name: "CAP LC",
@@ -180,12 +192,20 @@ export const Tags: {[id: string]: TagData} = {
 		name: "AG",
 		speciesFilter: species => species.tier === 'AG',
 	},
+	nduubl: {
+		name: "ND UUBL",
+		speciesFilter: species => [
+			'Aerodactyl-Mega', 'Azumarill', 'Blacephalon', 'Diancie-Mega', 'Gallade-Mega', 'Gardevoir-Mega', 'Gengar', 'Gyarados', 'Hawlucha',
+			'Heracross-Mega', 'Hydreigon', 'Latias', 'Latias-Mega', 'Latios', 'Latios-Mega', 'Manaphy', 'Pinsir-Mega', 'Slowbro-Mega', 'Thundurus',
+			'Thundurus-Therian', 'Venusaur-Mega', 'Xurkitree', 'Zapdos-Galar',
+		].includes(species.name),
+	},
 
 	// Doubles tiers
 	// -------------
 	duber: {
 		name: "DUber",
-		speciesFilter: species => species.doublesTier === 'DUber',
+		speciesFilter: species => species.doublesTier === 'DUber' || species.doublesTier === '(DUber)',
 	},
 	dou: {
 		name: "DOU",
@@ -213,17 +233,25 @@ export const Tags: {[id: string]: TagData} = {
 		name: "Future",
 		genericFilter: thing => thing.isNonstandard === 'Future',
 	},
-	unobtainable: {
-		name: "Unobtainable",
-		genericFilter: thing => thing.isNonstandard === 'Unobtainable',
-	},
 	lgpe: {
 		name: "LGPE",
 		genericFilter: thing => thing.isNonstandard === 'LGPE',
 	},
+	unobtainable: {
+		name: "Unobtainable",
+		genericFilter: thing => thing.isNonstandard === 'Unobtainable',
+	},
+	cap: {
+		name: "CAP",
+		speciesFilter: thing => thing.isNonstandard === 'CAP',
+	},
 	custom: {
 		name: "Custom",
 		genericFilter: thing => thing.isNonstandard === 'Custom',
+	},
+	nonexistent: {
+		name: "Nonexistent",
+		genericFilter: thing => !!thing.isNonstandard && thing.isNonstandard !== 'Unobtainable',
 	},
 
 	// filter columns
