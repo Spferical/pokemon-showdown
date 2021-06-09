@@ -596,7 +596,7 @@ export const commands: Chat.ChatCommands = {
 
 	noreply(target, room, user) {
 		if (!target.startsWith('/')) return this.parse('/help noreply');
-		return this.parse(target, true);
+		return this.parse(target, {isQuiet: true});
 	},
 	noreplyhelp: [`/noreply [command] - Runs the command without displaying the response.`],
 
@@ -1645,7 +1645,7 @@ export const commands: Chat.ChatCommands = {
 		}
 		const gameRoom = await Ladders.acceptChallenge(connection, chall as Ladders.BattleChallenge);
 		if (!gameRoom) return false;
-		this.sendChatMessage(`/text ${user.name} accepted the challenge, starting <<${gameRoom.roomid}>>`);
+		this.sendChatMessage(Utils.html`/nonotify ${user.name} accepted the challenge, starting &laquo;<a href="/${gameRoom.roomid}">${gameRoom.roomid}</a>&raquo;`);
 		return true;
 	},
 
@@ -1818,7 +1818,7 @@ export const commands: Chat.ChatCommands = {
 			}
 
 			if (typeof nextNamespace === 'function') break;
-			namespace = nextNamespace as import('../chat').AnnotatedChatCommands;
+			namespace = nextNamespace;
 		}
 
 		if (!currentBestHelp) {
