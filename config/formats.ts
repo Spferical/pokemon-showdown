@@ -65,7 +65,7 @@ export const Formats: FormatList = [
 		ruleset: ['Little Cup', 'Standard', 'Dynamax Clause'],
 		banlist: [
 			'Corsola-Galar', 'Cutiefly', 'Drifloon', 'Gastly', 'Gothita', 'Rufflet', 'Scyther', 'Sneasel', 'Swirlix', 'Tangela', 'Vulpix-Alola',
-			'Chlorophyll', 'Moody', 'Baton Pass', 'Abra', 'Archen', 'Chinchou', 'Dewpider', 'Diglett-Base', 'Drilbur', 'Dwebble', 'Ferroseed', 'Foongus', 'Grookey', 'Koffing', 
+			'Chlorophyll', 'Moody', 'Baton Pass', 'Abra', 'Archen', 'Chinchou', 'Dewpider', 'Diglett-Base', 'Drilbur', 'Dwebble', 'Ferroseed', 'Foongus', 'Grookey', 'Koffing',
       'Magnemite', 'Mareanie', 'Mienfoo', 'Mudbray', 'Onix', 'Pawniard', 'Ponyta-Base', 'Ponyta-Galar', 'Porygon', 'Scorbunny', 'Scraggy', 'Spritzee', 'Staryu', 'Timburr',
       'Trapinch', 'Tyrunt', 'Vullaby', 'Vulpix-Base', 'Farfetch\u2019d-Galar', 'Shellder', 'Wingull',
 		],
@@ -75,18 +75,19 @@ export const Formats: FormatList = [
 		threads: [
 			`&bullet; <a href="https://discord.gg/rF6UvCvqMv">LC RU Discord Server with Resources</a>`,
 		],
-		
+
 		mod: 'gen8',
 		maxLevel: 5,
 		ruleset: ['Little Cup', 'Standard', 'Dynamax Clause'],
 		banlist: [
-			'Abra', 'Amaura', 'Archen', 'Axew', 'Baltoy', 'Budew', 'Bunnelby', 'Carvanha', 'Chinchou', 'Corphish', 'Cottonee', 'Croagunk', 'Cufant', 'Cutiefly', 
-			'Dewpider', 'Diglett-Base', 'Diglett-Alola', 'Drifloon', 'Drilbur', 'Dwebble', 'Elekid', 'Farfetch\u2019d-Galar', 'Ferroseed', 'Foongus', 'Frillish', 'Gastly', 
+			'Abra', 'Amaura', 'Archen', 'Axew', 'Baltoy', 'Budew', 'Bunnelby', 'Carvanha', 'Chinchou', 'Corphish', 'Cottonee', 'Croagunk', 'Cufant', 'Cutiefly',
+			'Dewpider', 'Diglett-Base', 'Diglett-Alola', 'Drifloon', 'Drilbur', 'Dwebble', 'Elekid', 'Farfetch\u2019d-Galar', 'Ferroseed', 'Foongus', 'Frillish', 'Gastly',
 			'Goldeen', 'Gothita', 'Grookey', 'Grubbin', 'Helioptile', 'Hippopotas', 'Joltik', 'Koffing', 'Larvesta', 'Lileep',
 			'Magby', 'Magnemite', 'Mantyke', 'Mareanie', 'Meowth-Base', 'Mienfoo', 'Minccino', 'Mudbray', 'Munchlax', 'Natu', 'Omanyte', 'Onix', 'Pancham', 'Pawniard', 'Ponyta-Base',
 			'Ponyta-Galar', 'Porygon', 'Pumpkaboo-Small', 'Pumpkaboo-Super', 'Rufflet', 'Salandit', 'Sandile', 'Sandshrew-Base', 'Sandshrew-Alola', 'Scraggy', 'Scorbunny', 'Scyther', 'Shellder',
 			'Shellos', 'Skrelp', 'Sneasel', 'Snover', 'Swirlix', 'Spritzee', 'Squirtle', 'Staryu', 'Stunky', 'Tangela', 'Tentacool', 'Timburr', 'Tirtouga', 'Trapinch',
 			'Tyrunt', 'Vullaby', 'Vulpix-Base', 'Vulpix-Alola', 'Woobat', 'Wingull', 'Wynaut', 'Zigzagoon', 'Chlorophyll', 'Baton Pass', 'Corsola-Galar', 'Moody',
+			'Zorua',
 		],
 	},
 	{
@@ -184,9 +185,9 @@ export const Formats: FormatList = [
 		ruleset: ['Not Fully Evolved', 'Standard', 'Dynamax Clause'],
 		banlist: [
 			'Chansey', 'Doublade', 'Haunter', 'Magneton', 'Pawniard', 'Porygon2', 'Rhydon', 'Scyther', 'Sneasel', 'Type: Null',
-			'Arena Trap', 'Shadow Tag', 'Baton Pass', 'Thwackey', 'Gurdurr', 'Electabuzz', 'Piloswine', 'Golbat', 'Raboot', 'Kadabra', 'Pikachu', 
+			'Arena Trap', 'Shadow Tag', 'Baton Pass', 'Thwackey', 'Gurdurr', 'Electabuzz', 'Piloswine', 'Golbat', 'Raboot', 'Kadabra', 'Pikachu',
 			'Clefairy', 'Wartortle', 'Tangela', 'Hattrem', 'Corsola-Galar', 'Magmar', 'Carkol', 'Togetic', 'Gabite', 'Mr. Mime-Galar', 'Dusclops',
-			'Klang', 'Charjabug', 'Mareanie', 'Ferroseed', 'Slowpoke', 'Marshtomp', 'Fraxure', 'Lampent', 'Krokorok'
+			'Klang', 'Mareanie', 'Ferroseed', 'Slowpoke', 'Marshtomp', 'Fraxure', 'Lampent', 'Krokorok', 'Machoke', 'Rufflet',
 		],
 	},
 	{
@@ -206,7 +207,7 @@ export const Formats: FormatList = [
 			'Geomancy', 'Lovely Kiss', 'Shell Smash', 'Shift Gear', 'Spore', 'Thousand Arrows', 'V-create', 'Wicked Blow',
 		],
 	},
-	
+
 	// Past Generations
 	///////////////////////////////////////////////////////////////////
 
